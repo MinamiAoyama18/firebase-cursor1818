@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+           /* Add these background properties */
+            background-image: url('image/chinesegirl.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Click the button!</h1>
+    <button onclick="showMessage()">Say Hello to World</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
