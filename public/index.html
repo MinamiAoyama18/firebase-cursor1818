@@ -18,7 +18,70 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-        /* ... rest of your CSS ... */
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: #f44336;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -26,11 +89,11 @@
         <h1>Welcome Stranger</h1>
         <form id="loginForm" onsubmit="return handleLogin(event)">
             <div class="form-group">
-                <label for="username">Username:</label><br>
+                <label for="username">Username:</label>
                 <input type="text" id="username" required>
             </div>
             <div class="form-group">
-                <label for="password">Password:</label><br>
+                <label for="password">Password:</label>
                 <input type="password" id="password" required>
             </div>
             <button type="submit">Login</button>
