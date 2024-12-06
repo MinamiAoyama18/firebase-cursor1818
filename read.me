@@ -1,0 +1,71 @@
+How to Update Codes on git
+
+General Workflow with GitHub
+Pull Latest Changes:
+Always start by pulling the latest changes from GitHub to ensure your local copy is up-to-date.
+
+   git pull
+
+
+Edit Code with Cursor:
+Open your project in Cursor.
+Make your code changes.
+Save your changes locally.
+Commit and Push Changes:
+After making changes, commit them to your local repository.
+
+   git add .
+   git commit -m "Description of changes"
+  (git commit -m "Updated a.file b.file") or other variations
+   git push
+
+Firebase Projects
+Edit and Test Locally:
+Use a local server to test your Firebase app.
+Make changes in your code using Cursor.
+Test changes locally before deploying.
+Deploy to Firebase:
+Ensure you have the Firebase CLI installed.
+Deploy your app to Firebase Hosting.o
+
+
+   firebase deploy
+
+   OR
+ 
+   firebase init hosting
+   firebase deploy --only hosting
+
+
+
+Streamlit App
+Edit and Run Locally:
+Use Cursor to edit your Streamlit app code.
+Run your app locally to test changes.o
+
+
+   source venv/bin/activate
+   streamlit run app.py
+
+
+View in Browser:
+Open the local URL provided by Streamlit to view your app in the browser.
+Update and Push:
+After testing, commit and push your changes to GitHub.
+Using Cursor
+Open Project: Use Cursor to open your project directory.
+Code Assistance: Use Cursor's AI features to assist with coding.
+Version Control: Use integrated Git features in Cursor to manage commits and branches.
+Best Practices
+Branching: Use branches for new features or bug fixes.
+
+
+  git checkout -b new-feature
+
+
+
+
+
+
+
+
